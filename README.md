@@ -7,6 +7,12 @@ Input/Output of a char and string.
 # Procedure using the stack
 An example of a procedure using the stack. 
 
+# Menù
+A menù with several chioces.
+
+# Power
+A procedure will calculate power of a number. 
+
 # Shift Bit
 A procedure shifting bit and calculate the value of the binary number.
 
