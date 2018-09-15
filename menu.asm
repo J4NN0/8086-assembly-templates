@@ -2,17 +2,17 @@
 .stack
 .data
 
-STR1 db '1) Item 1 ', 10, 13, '$'
-STR2 db '2) Item 2 ', 10, 13, '$' 
-STR3 db '3) Item 3 ', 10, 13, '$'
-STR4 db '4) Item 4 ', 10, 13, '$'
-MSG_CHOICE db 'Enter your choice: ', '$'  
-MSG_ERR db 10, 13, 'This choice doesnt exist! ', 10, 13, '$'  
+STR1 DB '1) Item 1 ', 10, 13, '$'
+STR2 DB '2) Item 2 ', 10, 13, '$' 
+STR3 DB '3) Item 3 ', 10, 13, '$'
+STR4 DB '4) Item 4 ', 10, 13, '$'
+MSG_CHOICE DB 'Enter your choice: ', '$'  
+MSG_ERR DB 10, 13, 'This choice doesnt exist! ', 10, 13, '$'  
        
-1C db 10, 13, '-> First part...', 10, 13, '$' 
-2C db 10, 13, '-> Second part...', 10, 13, '$'
-3C db 10, 13, '-> Third part...', 10, 13, '$'
-4C db 10, 13, '-> Forth part...', 10, 13, '$' 
+1C DB 10, 13, '-> First part...', 10, 13, '$' 
+2C DB 10, 13, '-> Second part...', 10, 13, '$'
+3C DB 10, 13, '-> Third part...', 10, 13, '$'
+4C DB 10, 13, '-> Forth part...', 10, 13, '$' 
 
 .code
 .startup
@@ -24,6 +24,9 @@ MOV DX, OFFSET STR2
 MOV AH, 09
 INT 21H
 MOV DX, OFFSET STR3
+MOV AH, 09
+INT 21H
+MOV DX, OFFSET STR4
 MOV AH, 09
 INT 21H
 MOV DX, OFFSET MSG_CHOICE
