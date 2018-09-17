@@ -29,4 +29,4 @@ Search max of an array of dim N.
 Search min of an array of dim N.
 
 # Float division
-This procedure assume a division between 2 8 bit operands. If you want to use word operands you have to make sure no overflow condition will show up. It calculates at max 2 fractional digits for sake of simplicity.
+This procedure assume a division between two 8 bit operands. If you want to use word operands you have to make sure no overflow condition will show up. It calculates at max 2 fractional digits for sake of simplicity.
